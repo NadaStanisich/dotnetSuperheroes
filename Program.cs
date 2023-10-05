@@ -103,12 +103,68 @@ WonderWoman.SuperPowers = new List<SuperPower>{
     new SuperPower() { Name = "Accelerated Healing", Description = "The ability to heal at a faster rate than a normal human.", IsMagic = false }
 };
 
+Character GreenArrow = new Character();
+GreenArrow.SuperHero = "Green Arrow";
+GreenArrow.SecretIdentity = "Oliver Queen";
+GreenArrow.SuperPowers = new List<SuperPower>{
+    new SuperPower() { Name = "Peak Human Conditioning", Description = "The ability to have strength, speed, stamina, and agility at the peak of human potential.", IsMagic = false },
+    new SuperPower() { Name = "Master Archer", Description = "The ability to have mastered all forms of archery.", IsMagic = false },
+    new SuperPower() { Name = "Master Martial Artist", Description = "The ability to have mastered all forms of hand-to-hand combat.", IsMagic = false },
+    new SuperPower() { Name = "Master Swordsman", Description = "The ability to have mastered all forms of swordsmanship.", IsMagic = false },
+    new SuperPower() { Name = "Master Acrobat", Description = "The ability to have mastered all forms of acrobatics.", IsMagic = false },
+    new SuperPower() { Name = "Master Marksman", Description = "The ability to have mastered all forms of marksmanship.", IsMagic = false },
+    new SuperPower() { Name = "Master Tactician", Description = "The ability to have mastered all forms of tactics.", IsMagic = false },
+    new SuperPower() { Name = "Master of Stealth", Description = "The ability to have mastered all forms of stealth.", IsMagic = false },
+    new SuperPower() { Name = "Master of Disguise", Description = "The ability to have mastered all forms of disguise.", IsMagic = false },
+    new SuperPower() { Name = "Master of Throwing", Description = "The ability to have mastered all forms of throwing.", IsMagic = false },
+    new SuperPower() { Name = "Master of Weapons", Description = "The ability to have mastered all forms of weapons.", IsMagic = false },
+    new SuperPower() { Name = "Master of Firearms", Description = "The ability to have mastered all forms of firearms.", IsMagic = false },
+    new SuperPower() { Name = "Master of Technology", Description = "The ability to have mastered all forms of technology.", IsMagic = false },
+    new SuperPower() { Name = "Master of Business", Description = "The ability to have mastered all forms of business.", IsMagic = false }
+};
+
+Character Aquaman = new Character();
+Aquaman.SuperHero = "Aquaman";
+Aquaman.SecretIdentity = "Arthur Curry";
+Aquaman.SuperPowers = new List<SuperPower>{
+    new SuperPower() { Name = "Super Strength", Description = "The ability to exert force and lift heavy objects beyond one's natural strength.", IsMagic = false },
+    new SuperPower() { Name = "Superhuman Stamina", Description = "The ability to maintain continuous physical actions for an extended period of time.", IsMagic = false },
+    new SuperPower() { Name = "Superhuman Agility", Description = "The ability to maintain perfect balance, equilibrium, and dexterity.", IsMagic = false },
+    new SuperPower() { Name = "Superhuman Reflexes", Description = "The ability to react faster than a normal human.", IsMagic = false },
+    new SuperPower() { Name = "Superhuman Speed", Description = "The ability to move faster than the eye can perceive.", IsMagic = false },
+    new SuperPower() { Name = "Invulnerability", Description = "The ability to be immune to one or more forms of physical, mental, and spiritual damage and influence.", IsMagic = false },
+    new SuperPower() { Name = "Accelerated Healing", Description = "The ability to heal at a faster rate than a normal human.", IsMagic = false },
+    new SuperPower() { Name = "Underwater Breathing", Description = "The ability to breathe underwater.", IsMagic = false },
+    new SuperPower() { Name = "Enhanced Senses", Description = "The ability to have senses far beyond the average human.", IsMagic = false },
+    new SuperPower() { Name = "Telepathy", Description = "The ability to communicate with others through the mind.", IsMagic = false },
+    new SuperPower() { Name = "Animal Control", Description = "The ability to control animals.", IsMagic = false },
+    new SuperPower() { Name = "Marine Telepathy", Description = "The ability to communicate with marine life through the mind.", IsMagic = false },
+};  
+  
+Character Shazam = new Character();
+Shazam.SuperHero = "Shazam";
+Shazam.SecretIdentity = "Billy Batson";
+Shazam.SuperPowers = new List<SuperPower>{
+    new SuperPower() { Name = "Super Strength", Description = "The ability to exert force and lift heavy objects beyond one's natural strength.", IsMagic = true },
+    new SuperPower() { Name = "Superhuman Stamina", Description = "The ability to maintain continuous physical actions for an extended period of time.", IsMagic = true },
+    new SuperPower() { Name = "Superhuman Agility", Description = "The ability to maintain perfect balance, equilibrium, and dexterity.", IsMagic = true },
+    new SuperPower() { Name = "Superhuman Reflexes", Description = "The ability to react faster than a normal human.", IsMagic = true },
+    new SuperPower() { Name = "Superhuman Speed", Description = "The ability to move faster than the eye can perceive.", IsMagic = true },
+    new SuperPower() { Name = "Flight", Description = "The ability to defy gravity and propel oneself through the air unassisted.", IsMagic = true },
+    new SuperPower() { Name = "Invulnerability", Description = "The ability to be immune to one or more forms of physical, mental, and spiritual damage and influence.", IsMagic = true },
+    new SuperPower() { Name = "Accelerated Healing", Description = "The ability to heal at a faster rate than a normal human.", IsMagic = true },
+    new SuperPower() { Name = "Magic", Description = "The ability to use magic.", IsMagic = true }
+};  
+
 justiceleague.Add(Superman);
 justiceleague.Add(Batman);
 justiceleague.Add(Zatanna);
 justiceleague.Add(TheFlash);
 justiceleague.Add(GreenLantern);
 justiceleague.Add(WonderWoman);
+justiceleague.Add(GreenArrow);
+justiceleague.Add(Aquaman);
+justiceleague.Add(Shazam);
 
 app.MapGet("/", () => "Hello Superheroes!");
 app.MapGet("/view-justiceleague", () =>  ViewJusticeLeague());
